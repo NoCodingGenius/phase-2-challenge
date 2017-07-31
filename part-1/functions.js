@@ -17,6 +17,17 @@ const getMonth = function month(string) {
   return months[index];
 };
 
+const filterBetween = function filterBetween(arr, min, max) {
+    let newArray = []
+    arr.filter(function(string){
+      if (string >= min && string <= max) {
+        newArray.push(string)
+      }
+    })
+    return newArray;
+  };
+
 module.exports = {
   getMonth,
+  filterBetween
 }
