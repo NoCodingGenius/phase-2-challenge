@@ -18,5 +18,5 @@ const getMonth = function month(string) {
 };
 
 module.exports = {
-  getMonth
+  getMonth,
 }
