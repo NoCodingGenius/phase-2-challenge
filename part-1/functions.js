@@ -17,6 +17,11 @@ const getMonth = function month(string) {
   return months[index];
 };
 
+const reverseSentence = function reverseSentence(string) {
+  var arr = string.split(" ").reverse().join(" ")
+  return arr;
+}
+
 const filterBetween = function filterBetween(arr, min, max) {
     let newArray = []
     arr.filter(function(string){
@@ -29,5 +34,6 @@ const filterBetween = function filterBetween(arr, min, max) {
 
 module.exports = {
   getMonth,
-  filterBetween
+  filterBetween,
+  reverseSentence
 }
