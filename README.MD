@@ -17,9 +17,9 @@ Each requirement has a point value. A fully complete requirement gets full point
 
 ## General Requirements
 
-- [ ] __10:__ Solution is in a public GitHub repository called `phase-2-challenge`.
-- [ ] __10:__ Solution repository has 4 folders: `part-1`, `part-2`, and `part-3`, and `part-4`.
-- [ ] __20:__ Git history shows frequent commits.
+- [x] __10:__ Solution is in a public GitHub repository called `phase-2-challenge`.
+- [x] __10:__ Solution repository has 4 folders: `part-1`, `part-2`, and `part-3`, and `part-4`.
+- [x] __20:__ Git history shows frequent commits.
 
 ## Part 1: Write tests and solutions for these functions
 
@@ -43,10 +43,10 @@ month(christmas) // returns "December"
 
 #### Requirements
 
-- [ ] __10:__ A test using expected/valid inputs for the `month()` function is written in `tests.js`.
-- [ ] __10:__ A test using unexpected/invalid inputs for the `month()` function is written in `tests.js`.
-- [ ] __30:__ Correct implementation of the `month()` is defined in `functions.js`.
-- [ ] __10:__ Tests for `month()` are passing.
+- [x] __10:__ A test using expected/valid inputs for the `month()` function is written in `tests.js`.
+- [x] __10:__ A test using unexpected/invalid inputs for the `month()` function is written in `tests.js`.
+- [x] __30:__ Correct implementation of the `month()` is defined in `functions.js`.
+- [x] __10:__ Tests for `month()` are passing.
 
 ### Reverse a sentence
 
@@ -61,10 +61,10 @@ reverseSentence("Hello, world!") // => "world! Hello,"
 
 #### Requirements
 
-- [ ] __10:__ A test using expected/valid inputs for the `reverseSentence()` function is written in `tests.js`.
-- [ ] __10:__ A test using unexpected/invalid inputs for the `reverseSentence()` function is written in `tests.js`.
-- [ ] __30:__ Correct implementation of the `reverseSentence()` is defined in `functions.js`.
-- [ ] __10:__ Tests for `reverseSentence()` are passing.
+- [x] __10:__ A test using expected/valid inputs for the `reverseSentence()` function is written in `tests.js`.
+- [x] __10:__ A test using unexpected/invalid inputs for the `reverseSentence()` function is written in `tests.js`.
+- [x] __30:__ Correct implementation of the `reverseSentence()` is defined in `functions.js`.
+- [x] __10:__ Tests for `reverseSentence()` are passing.
 
 ### Names of properties
 
@@ -85,10 +85,10 @@ nameProps({}) // => []
 
 #### Requirements
 
-- [ ] __10:__ A test using expected/valid inputs for the `nameProps()` function is written in `tests.js`.
-- [ ] __10:__ A test using unexpected/invalid inputs for the `nameProps()` function is written in `tests.js`.
-- [ ] __30:__ Correct implementation of the `nameProps()` is defined in `functions.js`.
-- [ ] __10:__ Tests for `nameProps()` are passing.
+- [x] __10:__ A test using expected/valid inputs for the `nameProps()` function is written in `tests.js`.
+- [x] __10:__ A test using unexpected/invalid inputs for the `nameProps()` function is written in `tests.js`.
+- [x] __30:__ Correct implementation of the `nameProps()` is defined in `functions.js`.
+- [x] __10:__ Tests for `nameProps()` are passing.
 
 ### Filter between
 
@@ -106,10 +106,10 @@ filterBetween(arr, 'chickadee', 'chimpanzee') // => []
 
 #### Requirements
 
-- [ ] __10:__ A test using expected/valid inputs for the `filterBetween()` function is written in `tests.js`.
-- [ ] __10:__ A test using unexpected/invalid inputs for the `filterBetween()` function is written in `tests.js`.
-- [ ] __30:__ Correct implementation of the `filterBetween()` is defined in `functions.js`.
-- [ ] __10:__ Tests for `filterBetween()` are passing.
+- [x] __10:__ A test using expected/valid inputs for the `filterBetween()` function is written in `tests.js`.
+- [x] __10:__ A test using unexpected/invalid inputs for the `filterBetween()` function is written in `tests.js`.
+- [x] __30:__ Correct implementation of the `filterBetween()` is defined in `functions.js`.
+- [x] __10:__ Tests for `filterBetween()` are passing.
 
 ## Part 2: Extract data from JSON file
 
