@@ -1,7 +1,8 @@
 const assert = require('chai').assert;
 const getMonth = require('../part-1/functions').getMonth;
-const filterBetween = require('../part-1/functions').filterBetween;
 const reverseSentence = require('../part-1/functions').reverseSentence;
+const nameProps = require('../part-1/functions').nameProps;
+const filterBetween = require('../part-1/functions').filterBetween;
 
 describe('Part-1 Tests', function() {
   describe('getMonth', function() {
@@ -24,6 +25,21 @@ describe('Part-1 Tests', function() {
     })
   });
 
+  describe('nameProps', function() {
+    it('nameProps should return ["age", "name", "phone"]', function() {
+      assert.deepEqual(nameProps(friend), ['age', 'name', 'phone'])
+    })
+
+    it('nameProps should not return an empty object {}', function() {
+      assert.isNotObject(nameProps({}), [])
+    })
+    let friend = {
+      name: 'Dominique',
+      age: 30,
+      phone: '555-555-5555'
+    }
+  });
+
   describe('filterBetween', function() {
     it('filterBetween should return ["dog", "lion", "cow"]', function() {
       let arr = [
@@ -37,7 +53,7 @@ describe('Part-1 Tests', function() {
       assert.deepEqual(filterBetween(arr, "chimp", "lobster"), ["dog", "lion", "cow"])
     })
 
-    it('filterBetween should return not []', function() {
+    it('filterBetween should not return an empty array []', function() {
       let arr = [
         "dog",
         "cat",
