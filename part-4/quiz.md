@@ -32,6 +32,9 @@ hub             postgresql      wget
 - On a UNIX computer, how do you find the process id of a running process?
 
   * The easiest way to find out if process is running is run `ps aux` command and grep process name. If you got output along with process name/pid, your process is running.
+  * `a` = show processes for all users
+`u` = display the process's user/owner
+`x` = also show processes not attached to a terminal
   * or use the command `ps`
 
 - In a terminal, what does control-c do?
@@ -51,8 +54,8 @@ $ pwd
   * The result would be `cd: no such file or directory: /Users/steve`
   * However if I change it to `$ cd /Users/latoyawilliams` the following happens --
   1. The directory changes to `latoyawilliams`
-  2. We make a new directory (file) within `latoyawilliams` called `foo`
-  3. We create a new file within the same directory called `bar`
+  2. We make a new directory (folder) within `latoyawilliams` directory called `foo`
+  3. We create a new file within the same directory of `foo` called `bar`
   4. We change directories to `foo`
   5. We create a new file called `bar` within the `foo` directory
   6. We print our working directory and see -- `/users/latoyawilliams/foo`
@@ -71,11 +74,11 @@ $ pwd
   2. Go to the end of the file -- In vim, you can accomplish this just by hitting “G” (please note that it is capital).
   3. Add to the alias -- `alias aliasname='commands'`
   4. Write and close the file -- `:wq`
-  5. Install the .bashrc -- `$ source ~/.bashrc`
+  5. Install the .bashrc -- `$ source ~/.bashrc` or wait for it to update once you restart your system.
 
 - When a terminal command completes, how can you tell if it was successful or not?
 
-  * `echo $?` -- any number other than 0 is unsuccessful
+  * After the command completes, type the command, `echo $?` -- any number other than 0 is unsuccessful
 
 - What does your `~/.gitconfig` have in it? (paste the whole file here)
 
@@ -92,7 +95,8 @@ email = platinumtoii@yahoo.com
 - What is the difference between a relative and absolute path?
 
   * A relative path is a way to specify the location of a directory relative to another directory.
-  * An absolute or full path points to the same location in a file system, regardless of the current working directory. To do that, it must include the root directory. By contrast, a relative path starts from some given working directory, avoiding the need to provide the full absolute path.
+  * An absolute or full path points to the same location in a file system, regardless of the current working directory. To do that, it must include the root directory.
+  * By contrast, a relative path starts from some given working directory, avoiding the need to provide the full absolute path.
 
 - Lets say you have the following file structure
 
