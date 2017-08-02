@@ -1,6 +1,4 @@
-const getMonth = function month(string) {
-  let date = new Date(string);
-  let index = date.getMonth();
+const month = function month(string) {
   let months = [
     "January",
     "February",
@@ -16,31 +14,34 @@ const getMonth = function month(string) {
     "December"
   ];
 
-  return months[index];
+  let date = new Date(string);
+  let index = months[date.getMonth()];
+
+  return index;
 };
 
 const reverseSentence = function reverseSentence(string) {
-  var arr = string.split(" ").reverse().join(" ")
-  return arr
+  var reversedString = string.split(" ").reverse().join(" ")
+  return reversedString
 };
 
-const nameProps = function nameProps(obj) {
-  return Object.keys(obj).sort();
+const nameProps = function nameProps(objectGiven) {
+  return Object.keys(objectGiven).sort();
 };
 
-const filterBetween = function filterBetween(arr, min, max) {
-  let newArray = []
-  arr.filter(function(string) {
+const filterBetween = function filterBetween(originalArray, min, max) {
+  let newFilteredArray = []
+  originalArray.filter(function(string) {
     if (string >= min && string <= max) {
-      newArray.push(string)
+      newFilteredArray.push(string)
     }
   })
-  return newArray;
+  return newFilteredArray;
 };
 
 module.exports = {
-  getMonth,
-  filterBetween,
+  month,
   reverseSentence,
-  nameProps
+  nameProps,
+  filterBetween
 }
