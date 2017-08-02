@@ -4,7 +4,7 @@
   "description": "Creating four functions and testing said functions.",
   "main": "functions.js",
   "scripts": {
-    "test": "Mocha || true"
+    "test": "find ./part-1 -name '*tests.js' | xargs mocha -R spec Mocha || true"
   },
   "repository": {
     "type": "git",
